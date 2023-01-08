@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Country API </title>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Luckiest Guy', cursive;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #506146;
+            color: white;
+        }
+
+            /* Increase the font size of the heading */
+            .header h1 {
+                font-size: 40px;
+            }
+
+        /* Style the top navigation bar */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            /* Style the navigation bar links */
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+
+                /* Right-aligned link */
+                .navbar a.right {
+                    float: right;
+                }
+
+                /* Change color on hover */
+                .navbar a:hover {
+                    background-color: #A0A38E;
+                    color: black;
+                }
+
+        /* Column container */
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            -ms-flex: 30%; /* IE10 */
+            flex: 30%;
+            background-color: #7E8265;
+            padding: 20px;
+        }
+
+        /* Main column */
+        .main {
+            -ms-flex: 70%; /* IE10 */
+            flex: 70%;
+            background-color: whitesmoke;
+            padding: 50px;
+        }
+
+
+        section {
+            width: 100%;
+            height: 150vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background: #506146
+        }
+
+            section h1 {
+                text-shadow: 2px 5px 5px #2f3542;
+                word-spacing: 10px;
+                margin-bottom: 15px;
+                font-size: 2.5rem;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: white;
+            }
+
+        .centerDiv {
+            width: 80%;
+            height: 600px;
+            box-shadow: 2px 2px 2px 5px white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #7E8265;
+            color: white;
+        }
+
+        .imgdiv {
+            margin: 30px 0;
+        }
+
+        .button {
+            display: block;
+            width: 115px;
+            height: 25px;
+            background-color: #506146;
+            padding: 2px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            line-height: 25px;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #506146;
+        }
+
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 500px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 200px) {
+            .navbar a {
+                float: none;
+                width: 200%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Country API</h1>
+        <b><span> API created by me</span> </b>
+    </div>
+
+    <div class="navbar">
+        <a href="#aboutme">About Me</a>
+        <a href="#service">Service</a>
+        <a href="#footer">Footer</a>
+
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2 id="aboutme" style="color: white">About Me</h2>
+            <br> <h5>Photo of me:</h5><br><br>
+            <img src="images/my pic.PNG" style="height:400px; width: 400px " /><br><br><br>
+            <p>
+                I'm Your new Internet bestie. My mission is to help my audience to know about countries flag.
+                The Flags originally were used mainly in warfare, and to some extent they have remained insignia of leadership, serving
+                for the identification of friend or foe and as rallying points. They are now
+                also extensively employed for signaling, for decoration, and for display.
+                My goal is to help you understand the power
+                of internet and create connections that go beyond the internet.
+            </p><br><br><br>
+            <h3 style="color: white">More Information About Country API</h3>
+            <br><p>
+                Students and other users can learn about Social Studies, Civics, Geography and History while playing alone or with friends.
+            </p><br><br><br>
+
+
+
+            <img src="images/Train.gif" style="height:100px; width:250px" />
+            <img src="images/county4.gif" style="height:150px; width:150px" />
+            <img src="images/country2.gif" style="height:230px; width:230px" />
+            <img src="images/flag.gif" style="height:220px; width:120px" />
+
+
+
+        </div>
+        <div id="service" class="main">
+
+            <section>
+                <h1>WHY COUNTRY API ?</h1><p>
+                    The country API will help users to get knowledge about each country's flag this is kind of fun for
+                    students <br>they can easily learn the colors of different flags and can also learn spellings of
+                    different contry's names. <br> Only by entering the first or atleast any two or three alphabets this API will search for them each country.
+                </p><br><br>
+                <div class="centerDiv">
+
+
+                    <div class="imgdiv">
+                        <img src="images/jungle.gif" width="500" height="500" />
+
+
+
+                    </div>
+
+                    <a href="HtmlPage2.html" class="button">Click Me</a>
+
+
+
+                </div>
+            </section>
+            <img src="images/day.gif" width="962" height="250" />
+
+        </div>
+
+    </div>
+
+    <div id="footer" class="footer">
+        <h2>Copyright © 2022 Country API</h2>
+    </div>
+
+</body>
+</html>
